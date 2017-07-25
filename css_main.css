@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.across {
+  justify-content: center;
+}
+
+.middle {
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  height: 100vh;
+}
+
+.title {
+    display: flex;
+}
+
+.title h1 {
+  font-size: 180px;
+  font-family: 'Monoton', cursive;
+  font-weight: lighter;
+  padding: 0 5px 5px 5px;
+}
+
+.slogan {
+  display: flex;
+  font-size: 40px;
+  font-family: 'Share Tech Mono', monospace;
+  padding: 15px;
+  margin-top: 150px;
+}
+
+.button {
+  display: flex;
+  height: 100vh;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.button, .title, a  {
+  text-decoration: none;
+}
+
+.button h2 {
+  font-size: 25px;
+  font-family: monospace;
+  padding: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 45px;
+}
+
+
+.button h2:hover {
+  color: #00c9ff;
+}
+
+
+.button h2:active {
+  background-color: #f83600;
+  transform: translateY(5px);
+}
+
+
+@keyframes type {
+  from {
+    width: 0; 
+  }
+  to {
+    width: 670px;
+  }
+}
+
+.type {
+  animation: type .9s steps(31);
+  animation-delay: 2s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.gallery {
+  width: calc(100% - 40px);
+  /*background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);*/
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+}
+
+.card {
+  width: 420px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.curtain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.name {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: white;
+  padding: 5px;
+  white-space: nowrap;
+  transform: translate(-50%, -50%)
+}
+
+.card:hover .curtain {
+  height: 300px;
+}
+
+body {
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
