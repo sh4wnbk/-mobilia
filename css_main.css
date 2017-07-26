@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
 * {
   margin: 0;
@@ -16,15 +18,14 @@
   align-items: center;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .wrapper {
-  display: flex;
   flex-direction: column;
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   height: 100vh;
-}
-
-.title {
-    display: flex;
 }
 
 .title h1 {
@@ -35,7 +36,6 @@
 }
 
 .slogan {
-  display: flex;
   font-size: 40px;
   font-family: 'Share Tech Mono', monospace;
   padding: 15px;
@@ -43,7 +43,6 @@
 }
 
 .button {
-  display: flex;
   height: 100vh;
   align-items: flex-end;
   margin-bottom: 20px;
@@ -91,24 +90,17 @@
 }
 
 .gallery {
-  width: calc(100% - 40px);
-  /*background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);*/
-  display: flex;
   flex-wrap: wrap;
-  margin: 20px;
+  margin: 10px;
 }
 
 img {
   width: 100%;
-  height: 300px;
 }
 
 .card {
-  width: 420px;
-  height: 300px;
+  width: calc(25% - 10px);
   position: relative;
-  display: flex;
-  flex-direction: column;
   margin: 10px;
 }
 
@@ -126,7 +118,6 @@ img {
 }
 
 .name {
-  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -141,10 +132,115 @@ img {
 }
 
 .card:hover .curtain {
-  height: 300px;
+  height: 217px;
 }
 
 body {
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
+.product-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name {
+  display: flex;
+}
+
+.product-name, .product-price {
+  font-size: 25px;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-name, .product-price{
+  padding: 5px;
+}
+
+.product-number {
+  margin-bottom: 20px;
+}
+
+.button-container .blue {
+  margin-bottom: 10px;
+  padding: 10px 115px;
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+}
+
+.button-container .grey {
+  margin-bottom: 10px;
+  padding: 10px 56px;
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+}
+
+.button-container .orange {
+  padding: 10px 81px;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.button-container, .blue, .grey, .orange {
+  font-size: 13px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 5px;
+}
+
+.product-number, .product-type {
+  font-size: 13px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.left-container, .right-container {
+  width: 50%;
+}
+
+.left-container {
+  justify-content: flex-end;
+}
+
+.left-container div {
+  width: 500px;
+}
+
+.product-details, .mini-container {
+  width: 50%;
+}
+
+.product-details {
+  justify-content: space-around;
+}
+
+.product-description, .product-dimensions, .sales-arguments {
+  width: 41%;
+  margin: 10px;
+  margin-left: 40%;
+  padding: 5px;
+  font-size: 15px;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 3px;
+}
+
+.product-dimensions, .product-description, li {
+  list-style-type: none;
+}
+
+.grow:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  box-shadow: 5px 5px 3px #888888;
+  cursor: pointer;
+}
+
+.blue:hover, .grey:hover, .orange:hover {
+  color: #00c9ff;
+  cursor: pointer;
+}
+
+
+.blue:active, .grey:active, .orange:active {
+  transform: translateY(5px)
+}
