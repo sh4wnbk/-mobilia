@@ -23,12 +23,29 @@
 }
 
 .wrapper {
-  flex-direction: column;
+  flex-wrap: wrap;
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   height: 100vh;
+  align-content: space-between;
 }
 
-.title h1 {
+.title, .slogan, .product-reviews, .button {
+  width: 100vw;
+}
+
+.review-one, .review-two, .review-three, .review-four {
+  text-align: center;
+  width: 20%;
+  margin: 15px;
+  padding: 3px 10px 0 10px;
+  font-size: 13px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: 1px solid #404142;
+}
+
+.title {
   font-size: 180px;
   font-family: 'Monoton', cursive;
   font-weight: lighter;
@@ -39,13 +56,6 @@
   font-size: 40px;
   font-family: 'Share Tech Mono', monospace;
   padding: 15px;
-  margin-top: 150px;
-}
-
-.button {
-  height: 100vh;
-  align-items: flex-end;
-  margin-bottom: 20px;
 }
 
 .button, .title, a  {
@@ -139,7 +149,7 @@ body {
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
-.product-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name {
+.product-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name, .product-reviews {
   display: flex;
 }
 
