@@ -58,27 +58,26 @@
   padding: 15px;
 }
 
-.title, .button, a  {
+.button, a {
   text-decoration: none;
 }
 
 .button h2 {
-  font-size: 25px;
-  font-family: monospace;
-  padding: 25px;
-  background-color: black;
-  color: white;
-  border-radius: 45px;
+  font-size: 50px;
+  text-align: center;
+  padding: 5px;
+  color: #000;
+  margin-bottom: 25px;
 }
 
 
 .button h2:hover {
-  color: #00c9ff;
+  /*color: #ff4e50;*/
 }
 
 
 .button h2:active {
-  background-color: #f83600;
+  color: #ff4e50;
   transform: translateY(5px);
 }
 
@@ -99,7 +98,7 @@
   overflow: hidden;
 }
 
-.gallery {
+.gallery, .reviews {
   flex-wrap: wrap;
   margin: 10px;
 }
@@ -135,7 +134,7 @@ img {
   font-family: 'Nunito Sans', sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
-  color: white;
+  color: #fff;
   padding: 5px;
   white-space: nowrap;
   transform: translate(-50%, -50%)
@@ -145,11 +144,15 @@ img {
   height: 217px;
 }
 
+.mini-gallery .card:hover .curtain {
+  height: 104px;
+}
+
 body {
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
-.product-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name, .product-reviews {
+.product-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name, .product-reviews, .reviews {
   display: flex;
 }
 
