@@ -81,6 +81,10 @@
   transform: translateY(5px);
 }
 
+.button {
+  justify-content: space-around;
+}
+
 
 @keyframes type {
   from {
@@ -152,11 +156,11 @@ body {
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
-.product-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name, .product-reviews, .reviews {
+.product-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name, .product-reviews, .reviews, .help {
   display: flex;
 }
 
-.product-name, .product-price {
+.product-name, .product-price, .contact {
   font-size: 25px;
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
@@ -196,7 +200,7 @@ body {
   border-radius: 5px;
 }
 
-.product-number, .product-type {
+.product-number, .product-type, .help {
   font-size: 13px;
   font-family: 'Nunito Sans', sans-serif;
   text-transform: uppercase;
@@ -217,6 +221,10 @@ body {
 
 .product-details, .mini-container {
   width: 50%;
+}
+
+.space {
+  margin: 20px;
 }
 
 .product-details {
@@ -257,3 +265,7 @@ body {
 .blue:active, .grey:active, .orange:active {
   transform: translateY(5px)
 }
+
+/*.help {*/
+/*  width: 30%;*/
+/*}*/
