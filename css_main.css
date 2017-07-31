@@ -155,7 +155,7 @@ body {
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
-.product-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name, .product-reviews, .reviews {
+.product-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name, .product-reviews, .reviews, .help-container, .help-desk, .help-column {
   display: flex;
 }
 
@@ -261,25 +261,38 @@ body {
   transform: translateY(5px)
 }
 
-
-.help-container {
-  display: flex;
+.help-agent {
+  width: 20%;
 }
 
 
 .help-desk {
-  display: flex;
   width: 50%;
-  background-color: red;
+  border-top: 1px solid #C3BDC4;
 }
 
 .help-column {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  background-color: yellow;
+  width: 25%;
+  justify-content: space-between;
+  border-right: 1px solid #C3BDC4;
 }
 
 .help-desk div {
-  margin: 15px;
+  margin: 10px;
+}
+
+.help-container {
+  background-color: #F4F1F3;
+}
+
+.customer-center {
+  text-align: center;
+}
+
+.no-border {
+  border-right: none;
+}
+
+.no-top-border {
+  border-top: none;
 }
