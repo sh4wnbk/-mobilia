@@ -63,8 +63,9 @@
   padding: 10px;
 }
 
-.button a {
+.button, .review-one,  .review-two,  .review-three, .review-four, a {
   text-decoration: none;
+  color: #000;
 }
 
 .button h2 {
@@ -288,3 +289,6 @@ img {
   border-top: none;
 }
 
+span p {
+  background-color: #a8edea;
+}
