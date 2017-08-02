@@ -44,6 +44,14 @@
   border-bottom: 1px solid #404142;
 }
 
+h5 {
+  font-size: 13px;
+  padding: 5px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
 .title {
   font-size: 180px;
   font-family: 'Arvo', serif;
@@ -289,6 +297,6 @@ img {
   border-top: none;
 }
 
-span p:hover {
-  background-color: #a8edea;
+span p:hover, h5:hover {
+  background-color: #f5576c;
 }
