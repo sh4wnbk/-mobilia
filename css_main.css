@@ -289,6 +289,6 @@ img {
   border-top: none;
 }
 
-span p {
+span p:hover {
   background-color: #a8edea;
 }
