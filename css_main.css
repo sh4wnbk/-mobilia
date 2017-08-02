@@ -279,10 +279,8 @@ img {
   width: 25%;
   justify-content: space-between;
   border-right: 1px solid #C3BDC4;
-}
-
-.help-desk div {
-  margin: 10px;
+  margin: 0 10px 0 10px;
+  padding: 0 20px 0 0;
 }
 
 .customer-center, .review-one, .review-two, .review-three, .review-four {
