@@ -115,6 +115,8 @@ h5 {
   margin: 10px;
 }
 
+/*Make all the images 100 percent*/
+
 img {
   width: 100%;
 }
@@ -124,7 +126,8 @@ img {
   position: relative;
   margin: 10px;
 }
-
+/*all the drop-down styling */
+/*===============================================*/
 .curtain {
   position: absolute;
   top: 0;
@@ -159,8 +162,11 @@ img {
 .mini-gallery .card:hover .curtain {
   height: 104px;
 }
+/*--------------------------------------*/
 
-.mandel-display-container, .sparris-display-container, .gren-display-container, .dadel-display-container, .poppel-display-container, .spenat-display-container, .rova-display-container, .majs-display-container, .janus-display-container, .persika-display-container, .malteh-display-container, .stam-display-container, .vinstock-display-container, .persilja-display-container, .druvor-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name, .product-reviews, .reviews, .help-container, .help-desk, .help-column, .about-us {
+/*All the flex-boxes start on line 165*/
+
+.mandel-display-container, .sparris-display-container, .gren-display-container, .dadel-display-container, .poppel-display-container, .spenat-display-container, .rova-display-container, .majs-display-container, .janus-display-container, .persika-display-container, .malteh-display-container, .stam-display-container, .vinstock-display-container, .persilja-display-container, .druvor-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name, .product-reviews, .reviews, .help-container, .help-desk, .help-column, .about-us, .contact {
   display: flex;
 }
 
@@ -169,6 +175,10 @@ img {
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+.contact {
+  margin-bottom: 20px;
 }
 
 .product-name, .product-price{
@@ -222,7 +232,7 @@ img {
 .left-container div {
   width: 500px;
 }
-
+/*Here starts all the styling for the product/prchase page*/
 .product-details, .mini-container {
   width: 50%;
 }
