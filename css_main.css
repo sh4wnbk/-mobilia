@@ -64,6 +64,7 @@ h5 {
   font-size: 40px;
   font-family: 'Share Tech Mono', monospace;
   margin: 15px;
+  opacity: 0.0;
 }
 
 .slogan h4 {
@@ -95,19 +96,26 @@ h5 {
 
 
 @keyframes type {
-  from {
-    width: 0; 
+  0% {
+    width: 0ch; 
   }
-  to {
-    width: 694px;
+  100% {
+    width: 33ch;
+  }
+  0% {
+    opacity:  0.9
+  }
+  100% {
+    opacity:  1;
   }
 }
 
 .type {
-  animation: type .9s steps(31);
-  animation-delay: 1.5s;
   white-space: nowrap;
   overflow: hidden;
+  animation: type .9s steps(33);
+  animation-delay: 1.7s;
+  animation-fill-mode: forwards;
 }
 
 .gallery, .reviews {
