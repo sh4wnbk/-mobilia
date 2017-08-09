@@ -64,6 +64,9 @@ h5 {
   font-size: 40px;
   font-family: 'Share Tech Mono', monospace;
   margin: 15px;
+}
+
+.hide {
   opacity: 0.0;
 }
 
