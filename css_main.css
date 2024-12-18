@@ -115,19 +115,26 @@ img {
   width: calc(25% - 10px);
   position: relative;
   margin: 10px;
-  overflow: hidden
+  overflow: hidden; /* Ensure the curtain effect stays within the card */
 }
 
 .curtain {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%
+  width: 100%;
   height: 0;
-  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
   background-blend-mode: multiply;
-  overflow: hidden;
-  transition: .5s ease;
+  transition: height .5s ease;
+}
+
+.card:hover .curtain {
+  height: 100%;
+}
+
+.mini-gallery .card:hover .curtain {
+  height: 100%;
 }
 
 .name {
@@ -142,14 +149,6 @@ img {
   padding: 5px;
   white-space: nowrap;
   transform: translate(-50%, -50%)
-}
-
-.card:hover .curtain {
-  height: 100%;
-}
-
-.mini-gallery .card:hover .curtain {
-  height: 100%;
 }
 
 .mandel-display-container, .sparris-display-container, .gren-display-container, .dadel-display-container, .poppel-display-container, .spenat-display-container, .rova-display-container, .majs-display-container, .janus-display-container, .persika-display-container, .malteh-display-container, .stam-display-container, .vinstock-display-container, .persilja-display-container, .druvor-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name, .product-reviews, .reviews, .help-container, .help-desk, .help-column, .about-us {
