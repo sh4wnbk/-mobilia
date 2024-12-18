@@ -115,6 +115,7 @@ img {
   width: calc(25% - 10px);
   position: relative;
   margin: 10px;
+  overflow: hidden
 }
 
 .curtain {
