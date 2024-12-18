@@ -148,7 +148,7 @@ img {
   color: #fff;
   padding: 5px;
   white-space: nowrap;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 .mandel-display-container, .sparris-display-container, .gren-display-container, .dadel-display-container, .poppel-display-container, .spenat-display-container, .rova-display-container, .majs-display-container, .janus-display-container, .persika-display-container, .malteh-display-container, .stam-display-container, .vinstock-display-container, .persilja-display-container, .druvor-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name, .product-reviews, .reviews, .help-container, .help-desk, .help-column, .about-us {
