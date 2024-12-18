@@ -103,6 +103,7 @@
 }
 
 .gallery, .reviews {
+  display: flex;
   flex-wrap: wrap;
   margin: 10px;
 }
@@ -115,7 +116,9 @@ img {
   width: calc(25% - 10px);
   position: relative;
   margin: 10px;
-  overflow: hidden; /* Ensure the curtain effect stays within the card */
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  display: flex; /* Add this */
 }
 
 .curtain {
@@ -127,6 +130,7 @@ img {
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
   background-blend-mode: multiply;
   transition: height .5s ease;
+  z-index: 1;
 }
 
 .card:hover .curtain {
@@ -149,6 +153,8 @@ img {
   padding: 5px;
   white-space: nowrap;
   transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 2;
 }
 
 .mandel-display-container, .sparris-display-container, .gren-display-container, .dadel-display-container, .poppel-display-container, .spenat-display-container, .rova-display-container, .majs-display-container, .janus-display-container, .persika-display-container, .malteh-display-container, .stam-display-container, .vinstock-display-container, .persilja-display-container, .druvor-display-container, .left-container, .right-container, .right-container-info, .button-container, .product-details, .sales-arguments, .product-description, .product-dimensions, .product-wrapper, .wrapper, .title, .slogan, .button, .gallery, .name, .product-reviews, .reviews, .help-container, .help-desk, .help-column, .about-us {
